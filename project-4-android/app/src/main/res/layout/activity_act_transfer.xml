@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActTransfer">
+
+    <EditText
+        android:id="@+id/amountView"
+        android:layout_width="217dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="199dp"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <EditText
+        android:id="@+id/AccNumTransfer"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="549dp"
+        android:ems="10"
+        android:hint="account number"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountView" />
+
+    <Button
+        android:id="@+id/transferButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="481dp"
+        android:onClick="onClickManualy"
+        android:text="transfer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccNumTransfer" />
+
+    <ListView
+        android:id="@+id/LastAcc"
+        android:layout_width="185dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LastContact"
+        app:layout_constraintTop_toBottomOf="@+id/transferButton" />
+
+    <ListView
+        android:id="@+id/LastContact"
+        android:layout_width="188dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LastAcc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transferButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="onClickBack"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/LastContact"
+        app:layout_constraintEnd_toStartOf="@+id/transferButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccNumTransfer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

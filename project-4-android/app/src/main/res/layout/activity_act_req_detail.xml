@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActReqDetail">
+
+    <TextView
+        android:id="@+id/ReqStory"
+        android:layout_width="246dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/reqTypeDetail"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="41dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ReqStory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="454dp"
+        android:text="Answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReqStory" />
+
+    <TextView
+        android:id="@+id/ReqAnswerDetail"
+        android:layout_width="271dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="410dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="184dp"
+        android:onClick="inClickBack"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReqAnswerDetail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

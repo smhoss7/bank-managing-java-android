@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActRequset">
+
+    <RadioGroup
+        android:id="@+id/requestTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/requestMessageEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/aboutContactRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Contact" />
+
+        <RadioButton
+            android:id="@+id/reportRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report" />
+
+        <RadioButton
+            android:id="@+id/settingRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting" />
+
+        <RadioButton
+            android:id="@+id/transferRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer" />
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/reqListView"
+        android:layout_width="408dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/submitRequestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickCreate"
+        android:text="create request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestMessageEditText" />
+
+    <EditText
+        android:id="@+id/requestMessageEditText"
+        android:layout_width="384dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="request"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitRequestButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestTypeRadioGroup" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClickBack"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/reqListView"
+        app:layout_constraintEnd_toStartOf="@+id/submitRequestButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestMessageEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

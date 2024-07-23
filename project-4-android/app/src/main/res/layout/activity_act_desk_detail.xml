@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActDeskDetail">
+
+    <TextView
+        android:id="@+id/DeskName"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="649dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DeskBalance"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="588dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DeskDate"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="524dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DeskEnd"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="464dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="onClickBack"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeskEnd" />
+
+    <Button
+        android:id="@+id/DesktoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickDeskToAcc"
+        android:text="Desk to Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AccounttoDesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp"
+        android:onClick="onClickAccToDesk"
+        android:text="Account to Desk"
+        app:layout_constraintBottom_toTopOf="@+id/Remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DesktoAccount" />
+
+    <Button
+        android:id="@+id/Remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="208dp"
+        android:onClick="onClickRemove"
+        android:text="Remove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccounttoDesk" />
+
+    <EditText
+        android:id="@+id/amountDesk"
+        android:layout_width="217dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/DesktoAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeskEnd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
